@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Customer</title>
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="js/semantic.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+<div class="d-flex" id="wrapper">
+
+    <!--////////////////////////////////////////////Open-Sidebar//////////////////////////////////////////////////////////////////-->
+
+    <div class="bg-light border-right" id="sidebar-wrapper" style="background-color:#666666!important;">
+
+        <div class="sidebar-heading sidebarpos"><h3>Pos System </h3></div>
+        <img src="images/dashnavimage.jpeg" alt="" class="sideimage">
+        <div class="list-group list-group-flush">
+            <a href="index.html" class="list-group-item list-group-item-action bg-dark sidetext"><i
+                    class="fas fa-home"></i>Dashboard</a>
+            <a href="customers.html" class="list-group-item list-group-item-action bg-dark sidetext"><i
+                    class="fas fa-user-check"></i>Customer</a>
+            <a href="items.html" class="list-group-item list-group-item-action bg-dark sidetext"><i
+                    class="fas fa-archive"></i>Item</a>
+            <a href="orders.html" class="list-group-item list-group-item-action bg-dark sidetext"><i
+                    class="far fa-chart-bar"></i>Place Order</a>
+            <a href="vieworder.html" class="list-group-item list-group-item-action bg-dark sidetext"><i
+                    class="far fa-file-alt"></i>Reports</a>
+        </div>
+    </div>
+
+    <!--////////////////////////////////////////////Close-Sidebar//////////////////////////////////////////////////////////////////-->
+
+    <!--////////////////////////////////////////////////Open-Content/////////////////////////////////////////////////////////////////-->
+
+    <div id="page-content-wrapper">
+        <!--/////////////////////////////////////////////////Open-Headbar////////////////////////////////////////////////////////////-->
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom headbar" id="headbar">
+            <button type="button" class="btn btn-danger" id="menu-toggle"><i class="fas fa-sliders-h fa-2x"></i>
+            </button>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: white!important;"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0" id="headicon">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Search From
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Customer ID</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Customer Name</a>
+                        </div>
+                    </li>
+
+
+                    <button class="btn btn-primary searchicon" type="button">
+                        <input type="search" placeholder="  Search" class="search">
+                        <i class="fas fa-search fa-1x"></i>
+                    </button>
+
+                    < ul class="navbar-nav ml-auto ml-md-0">
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bell fa-2x navicon"></i>
+                            <span class="badge badge-danger headiconnum">9+</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+                            <a class="dropdown-item" href="#">New Notification</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-envelope fa-2x navicon"></i>
+                            <span class="badge badge-danger headiconnum">7+</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+                            <a class="dropdown-item" href="#">New Massage</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user-circle fa-2x navicon" style="color: #ffcc80"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Activity Log</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+
+                </ul>
+            </div>
+        </nav>
+        <!--/////////////////////////////////////Close-Headbar///////////////////////////////////////////////////////////////////////-->
+
+        <!--////////////////////////////////////Close-Custsection/////////////////////////////////////////////////////////////////////////   -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12" id="content">
+
+                    <div class="alert alert-dark" role="alert">
+
+                        <h4><a href="index.html" class="contentsidebar">Dashboard/</a>Customer Form</h4>
+                    </div>
+                    <h4 class="ui dividing header" style="font-size: 20px;color: #0e8c8c">Customer Information</h4><br>
+
+
+                    <form class="ui form" id="customer-form">
+                        <div class="ui form">
+                            <div class="two fields">
+                                <div class="field">
+                                    <label style="font-size: 15px">Customer ID</label>
+                                    <input placeholder="Customer iD" type="text" id="custId" name="cid">
+                                </div>
+                                <div class="field">
+                                    <label style="font-size: 15px">Full Name</label>
+                                    <input placeholder="Customer Name" type="text" id="custName" name="name">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field">
+                            <label style="font-size: 15px">Address</label>
+                            <input type="text" name="address" placeholder="Address" id="address">
+                        </div>
+
+                        <div class="ui form">
+                            <div class="two fields">
+
+                                <div class="field">
+                                    <label style="font-size: 15px">Salary</label>
+                                    <input placeholder="Salary" type="text" id="custSalary" name="salary">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <button id="add" type="button" onclick="addRow()" class="btn btn-primary">SAVE</button>
+                        <button id="update" onclick="updateRow()" type="button" class="btn btn-success">UPDATE</button>
+                        <button id="cancel" type="button" class="btn btn-secondary">CANCEL</button>
+                        <button id="delete" onclick="deleteRow(row)" type="button" class="btn btn-danger">DELETE
+                        </button>
+
+                    </form>
+                </div>
+
+
+                <br>
+
+
+                <table class="ui celled table" style="border: 1px solid black;overflow: auto" id="tbl">
+                    <thead>
+                    <tr>
+                        <th style="background: #ccccff;">Customer ID</th>
+                        <th style="background: #ccccff;">Full Name</th>
+                        <th style="background: #ccccff;">Address</th>
+                        <th style="background: #ccccff;">Salary</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+
+
+            </div>
+            <!--////////////////////////////////////Close-Custsection/////////////////////////////////////////////////////////////////////////          -->
+
+            <div>
+                <a href="#" id="specialbtn"><i class="fas fa-arrow-circle-up fa-4x" style="color: red" id="aa"></i></a>
+            </div>
+        </div>
+
+
+        <!--//////////////////////////////////////////////Close-Content/////////////////////////////////////////////////////////-->
+
+    </div>
+</div>
+</div>
+
+
+<script src="jquery/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="js/jquery-3.4.1.min.js"></script>
+
+<script>
+    $("#update").hide();
+    $("#cancel").hide();
+    $("#delete").hide();
+    $('#add').click(function () {
+        var formdata = $('#customer-form').serialize();
+        $.ajax({
+            url: "../api/service/CustomerService.php",
+            method: "POST",
+            async: true,
+            data: formdata + "&type=add"
+        }).done(function (resp) {
+            alert(resp);
+            clearAll();
+        });
+    });
+
+    function getAll() {
+        $('#tbl tbody').html("");
+        $.ajax({
+            url: "../api/service/CustomerService.php",
+            method: "POST",
+            async: true,
+            data: "type=getall",
+            dataType: "json"
+        }).done(function (resp) {
+            for (var i in resp) {
+                var temp = resp[i];
+                $('#tbl tbody').append(
+                    "<tr>" +
+                    "<td>" + temp[0] + "</td>" +
+                    "<td>" + temp[1] + "</td>" +
+                    "<td>" + temp[2] + "</td>" +
+                    "<td>" + temp[3] + "</td>" +
+                    "</tr>"
+                );
+            }
+        });
+    }
+
+    $('#update').click(function () {
+        var formdata = $('#customer-form').serialize();
+        $.ajax({
+            url: "../api/service/CustomerService.php",
+            method: "POST",
+            async: true,
+            data: formdata + "&type=update"
+        }).done(function (resp) {
+            alert(resp);
+            clearAll();
+            getAll();
+        });
+    });
+    $('#delete').click(function () {
+        var formdata = $('#customer-form').serialize();
+        $.ajax({
+            url: "../api/service/CustomerService.php",
+            method: "POST",
+            async: true,
+            data: formdata + "&type=delete"
+        }).done(function (resp) {
+            alert(resp);
+            clearAll();
+            getAll();
+        });
+    });
+
+    $(document).ready(function () {
+        getAll();
+        $("table tbody").on("click", 'tr', function (e) {
+            var row = $(this);
+            $("#update").show();
+            $("#cancel").show();
+            $("#delete").show();
+            $("#add").hide();
+            displayRow(row);
+        });
+        $('#cancel').click(function () {
+            cancelFunc();
+        });
+    });
+
+    function cancelFunc() {
+        $("#update").hide();
+        $("#cancel").hide();
+        $("#delete").hide();
+        $("#add").show();
+        clearAll();
+    }
+
+    function displayRow(x) {
+        var cols = $(x).children("td");
+        var i = 0;
+        $("input").each(function (e) {
+            $(this).val($(cols[i]).text());
+            i++;
+        });
+    }
+
+    function clearAll() {
+        $("input").each(function (e) {
+            $(this).val("");
+        })
+    }
+</script>
+</body>
+<footer>
+    <div style="width: 100%;height: 60px;background-color: #666666;">
+        <div id="socialicon">
+            <button class="ui circular facebook icon button">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            <button class="ui circular twitter icon button">
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button class="ui circular linkedin icon button">
+                <i class="fab fa-linkedin-in"></i>
+            </button>
+            <button class="ui circular google plus icon button">
+                <i class="fab fa-google"></i>
+            </button>
+        </div>
+    </div>
+</footer>
+</html>

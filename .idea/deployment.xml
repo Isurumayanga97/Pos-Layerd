@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="LayerdPOS">
+    <serverData>
+      <paths name="LayerdPOS">
+        <serverdata>
+          <mappings>
+            <mapping deploy="LayerdPOS" local="$PROJECT_DIR$" web="/LayerdPOS" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

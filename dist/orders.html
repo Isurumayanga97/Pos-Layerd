@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Customer</title>
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="js/semantic.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+<div class="d-flex" id="wrapper">
+
+    <!--////////////////////////////////////////////Open-Sidebar//////////////////////////////////////////////////////////////////-->
+
+    <div class="bg-light border-right" id="sidebar-wrapper" style="background-color:#666666!important;">
+
+        <div class="sidebar-heading sidebarpos"><h3>Pos System </h3></div>
+        <img src="images/dashnavimage.jpeg" alt="" class="sideimage">
+        <div class="list-group list-group-flush">
+            <a href="index.html" class="list-group-item list-group-item-action bg-dark sidetext"><i
+                    class="fas fa-home"></i>Dashboard</a>
+            <a href="customers.html" class="list-group-item list-group-item-action bg-dark sidetext"><i
+                    class="fas fa-user-check"></i>Customer</a>
+            <a href="items.html" class="list-group-item list-group-item-action bg-dark sidetext"><i
+                    class="fas fa-archive"></i>Item</a>
+            <a href="orders.html" class="list-group-item list-group-item-action bg-dark sidetext"><i
+                    class="far fa-chart-bar"></i>Place Order</a>
+            <a href="vieworder.html" class="list-group-item list-group-item-action bg-dark sidetext"><i
+                    class="far fa-file-alt"></i>Reports</a>
+        </div>
+    </div>
+
+    <!--////////////////////////////////////////////Close-Sidebar//////////////////////////////////////////////////////////////////-->
+
+    <!--////////////////////////////////////////////////Open-Content/////////////////////////////////////////////////////////////////-->
+
+    <div id="page-content-wrapper">
+        <!--/////////////////////////////////////////////////Open-Headbar////////////////////////////////////////////////////////////-->
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom headbar" id="headbar">
+            <button type="button" class="btn btn-danger" id="menu-toggle"><i class="fas fa-sliders-h fa-2x"></i>
+            </button>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: white!important;"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0" id="headicon">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Search From
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Customer ID</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Customer Name</a>
+                        </div>
+                    </li>
+
+
+                    <button class="btn btn-primary searchicon" type="button">
+                        <input type="search" placeholder="  Search" class="search">
+                        <i class="fas fa-search fa-1x"></i>
+                    </button>
+
+                    < ul class="navbar-nav ml-auto ml-md-0">
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-bell fa-2x navicon"></i>
+                            <span class="badge badge-danger headiconnum">9+</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+                            <a class="dropdown-item" href="#">New Notification</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown no-arrow mx-1">
+                        <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-envelope fa-2x navicon"></i>
+                            <span class="badge badge-danger headiconnum">7+</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+                            <a class="dropdown-item" href="#">New Massage</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown no-arrow">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user-circle fa-2x navicon" style="color: #ffcc80"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Activity Log</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+
+                </ul>
+            </div>
+        </nav>
+        <!--/////////////////////////////////////Close-Headbar///////////////////////////////////////////////////////////////////////-->
+
+        <!--////////////////////////////////////Close-Custsection/////////////////////////////////////////////////////////////////////////   -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12" id="content">
+
+                    <div class="alert alert-dark" role="alert">
+
+                        <h4><a href="index.html" class="contentsidebar">Dashboard/</a>Order Form</h4>
+                    </div>
+                    <h4 class="ui dividing header" style="font-size: 20px;color: #0e8c8c">Order Information</h4><br>
+
+
+                    <div class="m_card">
+                        <form id="order_form">
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>OrderID</label>
+                                    <input type="text" name="oid" id="oid" class="form-control"
+                                           placeholder="First Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>Select Customer</label>
+                                    <select id="cid" name="cid" class="form-control">
+                                        <option selected>Choose Customer...</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label>Select Item</label>
+                                    <select id="item" class="form-control" name="code">
+                                        <option selected>Choose ITEM...</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label>ItemName</label>
+                                    <input id="itemName" type="text" class="form-control" disabled
+                                           placeholder="ItemName">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col">
+                                    <label>Avilable Qty</label>
+                                    <input id="avi_qty" type="text" disabled class="form-control" placeholder="Qty">
+                                </div>
+                                <div class="form-group col">
+                                    <label>Unit Price</label>
+                                    <input id="price" type="text" class="form-control" placeholder="Price" disabled>
+                                </div>
+                                <div class="form-group col">
+                                    <label>Buying Qty</label>
+                                    <input id="qty" type="text" class="form-control" placeholder="Qty">
+                                </div>
+                                <div class="form-group col-12">
+                                    <button id="addToCart" class="btn btn-success float-right" type="button">Add To
+                                        Cart
+                                    </button>
+                                </div>
+                            </div>
+                            <table id="tbl" class="table table-hover">
+                                <thead class="thead-dark">
+                                <tr>
+                                    <th scope="col">ItemCode</th>
+                                    <th scope="col">ItemName</th>
+                                    <th scope="col">Qty</th>
+                                    <th scope="col">UnitPrice</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                            <div class="form-row bg-secondary card-body rounded">
+                                <h3 id="tot">Total : 00.00</h3>
+                            </div>
+
+                            <div class="form-group" style="padding-top: 10px">
+                                <button type="button" id="place_order" class="btn btn-primary float-right">Place Order
+                                </button>
+                            </div>
+                        </form>
+
+                        <table id="tbl-od" class="table table-hover" style="margin-top: 100px">
+                            <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">OrderID</th>
+                                <th scope="col">Date</th>
+                                <th scope="col">CustomerID</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <!--////////////////////////////////////Close-Custsection/////////////////////////////////////////////////////////////////////////          -->
+
+                <div>
+                    <a href="#" id="specialbtn"><i class="fas fa-arrow-circle-up fa-4x" style="color: red" id="aa"></i></a>
+                </div>
+            </div>
+
+
+            <!--//////////////////////////////////////////////Close-Content/////////////////////////////////////////////////////////-->
+
+        </div>
+    </div>
+</div>
+
+
+<script src="jquery/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<!--<script src="js/myjs.js"></script>-->
+<script>
+    loadItems();
+    loadCustomers();
+    getAll();
+
+    function clearAll() {
+        $('input').val("");
+        $('#tbl tbody').html("");
+        $('#tot').text("Total : 00.00");
+        getAll();
+    }
+
+    function getAll() {
+        $('#tbl-od tbody').html("");
+        $.ajax({
+            url: "../api/service/OrderService.php",
+            method: "POST",
+            async: true,
+            data: "type=getall",
+            dataType: "json"
+        }).done(function (resp) {
+            for (var i in resp) {
+                var temp = resp[i];
+                $('#tbl-od tbody').append(
+                    "<tr>" +
+                    "<td>" + temp[0] + "</td>" +
+                    "<td>" + temp[1] + "</td>" +
+                    "<td>" + temp[2] + "</td>" +
+                    "</tr>"
+                );
+            }
+        });
+    }
+
+    function loadItems() {
+        $.ajax({
+            url: "../api/service/ItemService.php",
+            method: "POST",
+            async: true,
+            data: "type=getall",
+            dataType: "json"
+        }).done(function (res) {
+            for (var i of  res) {
+                $('#item').append("<option>" + i[0] + "</option>");
+            }
+        });
+    }
+
+    function loadCustomers() {
+        $.ajax({
+            url: "../api/service/CustomerService.php",
+            method: "POST",
+            async: true,
+            data: "type=getall",
+            dataType: "json"
+        }).done(function (res) {
+            for (var i of  res) {
+                $('#cid').append("<option>" + i[0] + "</option>");
+            }
+        });
+    }
+
+    $('#item').change(function () {
+        var formdata = $('#order_form').serialize();
+        $.ajax({
+            url: "../api/service/ItemService.php",
+            method: "POST",
+            async: true,
+            data: formdata + "&type=search",
+            dataType: 'json'
+        }).done(function (data) {
+            $('#itemName').val(data[1]);
+            $('#avi_qty').val(data[2]);
+            $('#price').val(data[3]);
+        });
+    });
+    $('#addToCart').click(function () {
+
+        var bol = false;
+        var row;
+        var newQ = Number.parseInt($("#qty").val());
+        $("#tbl tbody tr").each(function () {
+            if ($(this).find("td:first").text() == $("#item").val()) {
+                bol = true;
+                row = $(this);
+                return;
+            }
+        });
+
+        if (bol) {
+            var oldQ = Number.parseInt($(row).find("td:eq(2)").text());
+            $(row).find("td:eq(2)").text(newQ + oldQ);
+        } else {
+            $('#tbl tbody').append(
+                "<tr>" +
+                "<td>" + $('#item').val() + "</td>" +
+                "<td>" + $('#itemName').val() + "</td>" +
+                "<td>" + $('#qty').val() + "</td>" +
+                "<td>" + $('#price').val() + "</td>" +
+                "</tr>"
+            );
+        }
+        countTotal();
+    });
+    $('#tbl tbody').on('click', 'tr', function () {
+        $('#item').val($(this).find("td:eq(0)").text());
+        $('#itemName').val($(this).find("td:eq(1)").text());
+        $('#qty').val($(this).find("td:eq(2)").text());
+        $('#price').val($(this).find("td:eq(3)").text());
+    });
+
+    function countTotal() {
+        var tot = 0;
+        $("#tbl tbody tr").each(function () {
+            var qty = parseInt($(this).find("td:eq(2)").text());
+            var price = parseFloat($(this).find("td:eq(3)").text());
+
+            tot += qty * price;
+        });
+        $("#tot").text("Total : " + tot);
+    }
+
+    $('#place_order').click(function () {
+        var tableData = [];
+        $('#tbl tbody tr').each(function () {
+            var itemcode = $(this).find("td:eq(0)").text(),
+                qty = parseInt($(this).find("td:eq(2)").text()),
+                unitprice = parseFloat($(this).find("td:eq(3)").text());
+            tableData.push({
+                code: itemcode,
+                qty: qty,
+                price: unitprice
+            });
+        });
+        var tbldata = JSON.stringify(tableData);
+        var orderdata = $('#order_form').serialize();
+        $.ajax({
+            url: "../api/service/OrderService.php",
+            method: "POST",
+            async: true,
+            data: orderdata + "&type=add&x=" + tbldata
+        }).done(function (res) {
+            alert(res);
+            clearAll();
+        });
+    });
+</script>
+
+
+</body>
+<footer>
+    <div style="width: 100%;height: 60px;background-color: #666666;">
+        <div id="socialicon">
+            <button class="ui circular facebook icon button">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            <button class="ui circular twitter icon button">
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button class="ui circular linkedin icon button">
+                <i class="fab fa-linkedin-in"></i>
+            </button>
+            <button class="ui circular google plus icon button">
+                <i class="fab fa-google"></i>
+            </button>
+        </div>
+    </div>
+</footer>
+</html>

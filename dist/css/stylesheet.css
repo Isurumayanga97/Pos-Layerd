@@ -1,0 +1,103 @@
+.headbar{
+    background-color:#262626;
+}
+.search{
+    border-radius: 5px;
+    width: 160px;
+    height: 30px;
+    padding: 6px 12px;
+}
+.navicon{
+    color: #cccccc;
+}
+.navicon:hover{
+    color: white;
+}
+.headiconnum{
+    position: relative;
+    bottom: 15px;
+}
+.searchicon{
+    height: 30px;
+    padding: 6px 12px;
+    background: none!important;
+    border: none!important;
+    position: relative;
+    right: 30px;
+    color: #cccccc!important;
+}
+#navbarDropdown{
+    color: white;
+}
+.sidebarpos{
+    background-color: #262626;
+    color: white;
+    height: 57px;
+}
+.sideimage{
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    border: 2px solid gold;
+    border-radius: 100%;
+    position: relative;
+    left: 20px;
+}
+.sidetext{
+    color: white!important;
+    border: none!important;
+    font-size: 20px;
+    margin-bottom: 5px!important;
+}
+.contentsidebar{
+    color: gray;
+}
+#invoice{
+    background-color:white;
+}
+#companyname{
+    font-family: 'Dancing Script', cursive;
+    font-size: 45px;
+    font-weight: bold;
+}
+#companyname:hover{
+    font-family: 'Barlow', sans-serif;
+    color: red;
+}
+#info:hover{
+    font-style: italic;
+}
+.cardone:hover{
+    background-color: black!important;
+}
+#sidebar-wrapper{
+
+}
+#headbar{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+#content{
+    position: relative;
+    margin-top: 58px;
+}
+#headicon{
+    position: relative;
+    margin-right: 190px;
+}
+#socialicon{
+    position: relative;
+    top: 10px!important;
+    left: 210px!important;
+}
+#specialbtn{
+    position: fixed;
+    z-index: 1000;
+    bottom:5px;
+    left: 70px;
+}
+
+#aa:hover{
+    color: #007bff!important;
+}

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <link rel="stylesheet" type="text/css" href="css/semantic.min.css">
+    <script
+            src="https://code.jquery.com/jquery-3.1.1.min.js"
+            integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+            crossorigin="anonymous"></script>
+    <script src="js/semantic.min.js"></script>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+          integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+
+<div class="d-flex" id="wrapper">
+
+    <!--////////////////////////////////////////////Open-Sidebar//////////////////////////////////////////////////////////////////-->
+
+    <div class="bg-light border-right" id="sidebar-wrapper" style="background-color:#666666!important;">
+
+        <div class="sidebar-heading sidebarpos"><h3>Pos System </h3></div>
+        <img src="images/dashnavimage.jpeg" alt="" class="sideimage">
+        <div class="list-group list-group-flush">
+            <a href="index.html" class="list-group-item list-group-item-action bg-dark sidetext"><i
+                    class="fas fa-home"></i>Dashboard</a>
+            <a href="customers.html" class="list-group-item list-group-item-action bg-dark sidetext"><i
+                    class="fas fa-user-check"></i>Customer</a>
+            <a href="items.html" class="list-group-item list-group-item-action bg-dark sidetext"><i
+                    class="fas fa-archive"></i>Item</a>
+            <a href="orders.html" class="list-group-item list-group-item-action bg-dark sidetext"><i
+                    class="far fa-chart-bar"></i>Place Order</a>
+            <a href="vieworder.html" class="list-group-item list-group-item-action bg-dark sidetext"><i
+                    class="far fa-file-alt"></i>Reports</a>
+        </div>
+    </div>
+
+    <!--////////////////////////////////////////////Close-Sidebar//////////////////////////////////////////////////////////////////-->
+
+    <!--////////////////////////////////////////////////Open-Content/////////////////////////////////////////////////////////////////-->
+
+    <div id="page-content-wrapper">
+        <!--/////////////////////////////////////////////////Open-Headbar////////////////////////////////////////////////////////////-->
+        <nav class="navbar navbar-expand-lg navbar-light border-bottom headbar" id="headbar">
+            <button type="button" class="btn btn-danger" id="menu-toggle"><i class="fas fa-sliders-h fa-2x"></i>
+            </button>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon" style="background-color: white!important;"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Search From
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Customer ID</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Customer Name</a>
+                        </div>
+                    </li>
+
+
+                    <button class="btn btn-primary searchicon" type="button">
+                        <input type="search" placeholder="  Search" class="search">
+                        <i class="fas fa-search fa-1x"></i>
+                    </button>
+
+                    <ul class="navbar-nav ml-auto ml-md-0" id="headicon">
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="alertsDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-bell fa-2x navicon"></i>
+                                <span class="badge badge-danger headiconnum">9+</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="alertsDropdown">
+                                <a class="dropdown-item" href="#">New Notification</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1">
+                            <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-envelope fa-2x navicon"></i>
+                                <span class="badge badge-danger headiconnum">7+</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="messagesDropdown">
+                                <a class="dropdown-item" href="#">New Massage</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow">
+                            <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fas fa-user-circle fa-2x navicon" style="color: #ffcc80"></i>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
+                                <a class="dropdown-item" href="#">Settings</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#">Activity Log</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#" data-toggle="modal"
+                                   data-target="#logoutModal">Logout</a>
+                            </div>
+                        </li>
+                    </ul>
+
+                </ul>
+            </div>
+        </nav>
+        <!--/////////////////////////////////////Close-Headbar///////////////////////////////////////////////////////////////////////-->
+
+        <!--////////////////////////////////////Close-Custsection/////////////////////////////////////////////////////////////////////////   -->
+
+        <!--//////////////////////////////////////////Open-dashboard//////////////////////////////////////////////////////////////////////////-->
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12" id="content">
+                    <div class="alert alert-dark" role="alert">
+
+                        <h4><a href="index.html" class="contentsidebar">Dashboard/</a>Overview</h4>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                            <div class="card text-white bg-primary o-hidden h-100 cardone">
+                                <div class="card-body">
+                                    <div class="card-body-icon">
+                                        <i class="fas fa-user-check fa-3x"><strong style="color: red">245+</strong></i>
+                                    </div>
+                                    <div class="mr-5"><h2>Customers</h2></div>
+                                </div>
+                                <a class="card-footer text-white clearfix small z-1" href="#">
+                                    <span class="float-left">View Details</span>
+                                    <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                            <div class="card text-white bg-warning o-hidden h-100 cardone">
+                                <div class="card-body">
+                                    <div class="card-body-icon">
+                                        <i class="fas fa-user-check fa-3x"><strong style="color: red">5624+</strong></i>
+                                    </div>
+                                    <div class="mr-5"><h2>Items</h2></div>
+                                </div>
+                                <a class="card-footer text-white clearfix small z-1" href="#">
+                                    <span class="float-left">View Details</span>
+                                    <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                            <div class="card text-white bg-success o-hidden h-100 cardone">
+                                <div class="card-body">
+                                    <div class="card-body-icon">
+                                        <i class="far fa-chart-bar fa-3x"><strong style="color: red">5624+</strong></i>
+                                    </div>
+                                    <div class="mr-5"><h2>Orders</h2></div>
+                                </div>
+                                <a class="card-footer text-white clearfix small z-1" href="#">
+                                    <span class="float-left">View Details</span>
+                                    <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-sm-6 mb-3">
+                            <div class="card text-white bg-danger o-hidden h-100 cardone">
+                                <div class="card-body">
+                                    <div class="card-body-icon">
+                                        <i class="fas fa-fw fa-life-ring fa-3x"></i>
+                                    </div>
+                                    <div class="mr-5"><h2>Vieworder</h2></div>
+                                </div>
+                                <a class="card-footer text-white clearfix small z-1" href="#">
+                                    <span class="float-left">View Details</span>
+                                    <span class="float-right">
+                  <i class="fas fa-angle-right"></i>
+                </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card mb-3">
+                        <div class="card-header">
+                            <i class="fas fa-chart-area"></i>
+                            Area Chart
+                        </div>
+                        <img src="images/giphy.gif" alt="">
+                        <div class="card-footer small text-muted">Updated yesterday at 10:01 PM</div>
+                    </div>
+
+
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <div class="list-group">
+                                    <a href="#" class="list-group-item active">
+                                        <h4 class="list-group-item-heading">Status And Anylizing</h4>
+                                    </a>
+                                </div>
+                                <br>
+                                <img src="images/giphy%20(1).gif" alt=""
+                                     style="width: 710px;height: 400px;border: 1px solid black">
+                            </div>
+
+                            <div class="col-md-4">
+                                <div class="panel panel-info">
+                                    <div class="panel-heading" style="font-size: 30px">
+                                        <i class="fa fa-bell fa-fw" style="font-size: 40px"></i>Notifications Panel
+                                    </div>
+                                    <br>
+                                    <div class="panel-body">
+                                        <div class="list-group">
+
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-twitter fa-fw"></i>3 New Followers
+                                                <span class="pull-right text-muted small"><em>12 minutes ago</em>
+                                    </span>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-envelope fa-fw"></i>Message Sent
+                                                <span class="pull-right text-muted small"><em>27 minutes ago</em>
+                                    </span>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-tasks fa-fw"></i>New Task
+                                                <span class="pull-right text-muted small"><em>43 minutes ago</em>
+                                    </span>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-upload fa-fw"></i>Server Rebooted
+                                                <span class="pull-right text-muted small"><em>11:32 AM</em>
+                                    </span>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-bolt fa-fw"></i>Server Crashed!
+                                                <span class="pull-right text-muted small"><em>11:13 AM</em>
+                                    </span>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-warning fa-fw"></i>Server Not Responding
+                                                <span class="pull-right text-muted small"><em>10:57 AM</em>
+                                    </span>
+                                            </a>
+
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-bolt fa-fw"></i>Server Crashed!
+                                                <span class="pull-right text-muted small"><em>11:13 AM</em>
+                                    </span>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-warning fa-fw"></i>Server Not Responding
+                                                <span class="pull-right text-muted small"><em>10:57 AM</em>
+                                    </span>
+                                            </a>
+                                            <a href="#" class="list-group-item">
+                                                <i class="fa fa-shopping-cart fa-fw"></i>New Order Placed
+                                                <span class="pull-right text-muted small"><em>9:49 AM</em>
+                                    </span>
+                                            </a>
+                                        </div>
+                                        <a href="#" class="btn btn-info btn-block"
+                                           style="margin-bottom: 10px;margin-top:5px">View All Alerts</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <a href="#" id="specialbtn"><i class="fas fa-arrow-circle-up fa-4x" style="color: red"
+                                                               id="aa"></i></a>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--/////////////////////////////////////////////Close-Dashboard////////////////////////////////////////////////////////////////////////////    -->
+
+    </div>
+</div>
+<script src="jquery/jquery.min.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function (e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+</script>
+
+</body>
+
+<footer>
+    <div style="width: 100%;height: 60px;background-color: #666666;">
+        <div id="socialicon">
+            <button class="ui circular facebook icon button">
+                <i class="fab fa-facebook-f"></i>
+            </button>
+            <button class="ui circular twitter icon button">
+                <i class="fab fa-twitter"></i>
+            </button>
+            <button class="ui circular linkedin icon button">
+                <i class="fab fa-linkedin-in"></i>
+            </button>
+            <button class="ui circular google plus icon button">
+                <i class="fab fa-google"></i>
+            </button>
+        </div>
+    </div>
+</footer>
+
+</html>
